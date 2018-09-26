@@ -1,0 +1,16 @@
+<p>
+  这是父组件
+</p>
+<app-child1 (getvalue)="del($event)" [arr]="data">
+  <h3>这是一段文字</h3>
+  <footer>这是底部</footer>
+</app-child>
+<app-child [arr]="data1" (delIndex)="del($event)">
+  <p class="header">
+    这是列表的开始；
+  </p>
+  <p class="footer">
+    这是列表的结束
+  </p>
+</app-child>
+
