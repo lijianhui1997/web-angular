@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>animate</title>
+		<style type="text/css">
+			*{
+				margin:0;
+				padding:0;
+			}
+			#box{
+				width: 100px;
+				height: 100px;
+				background: red;
+				position: absolute;
+				left:0;
+			}
+		</style>
+		<script type="text/javascript" src="animate.js"></script>
+	</head>
+	<body>
+		<div id="box"></div>
+		<script type="text/javascript">
+			var box=document.getElementById('box');
+			box.onclick=function(){
+					animate(box,{left:1000,top:500,opacity:30},function(){
+						console.log(1)
+					})
+			}
+		</script>
+	</body>
+</html>

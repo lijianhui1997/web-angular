@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<style type="text/css">
+		* {
+		margin:0px;
+		padding:0px;
+		}
+		
+		.wrap{
+			width:1200px;
+			height:397px;
+			margin-left:30px; 
+			margin-right:30px;
+			border: 1px solid #000;
+			position: relative;
+			overflow:hidden;
+		}
+		.wrap a{
+			display: none;
+		}
+		.bottom{
+			width: 1000px;
+			height: 73px;
+			bottom:0;
+			left:99px;
+			position: absolute;
+			background: url(images/bunner2.png);
+		}
+		ul,li{
+			list-style: none;
+		}
+		a{
+			text-decoration: none;
+		}
+		.bottom span{
+			width: 50px;
+			height: 73px;
+			line-height: 73px;
+			text-align: center;
+			cursor: pointer;
+			color: #fff;
+			font-size: 25px;
+			float: left;
+		}
+		#next{
+				float:right;
+		}
+	</style>
+	<script src="animate.js"></script>
+</head>
+<body>
+			
+		<div class="wrap">
+				<a href="#" style="display:block"><img src="images/shida1.gif"> </a>
+				<a href="#"><img src="images/shida2.jpg" alt="" /></a>
+				<a href="#"><img src="images/shida3.jpg"/></a>
+				<a href="#"><img src="images/shida4.jpg"/></a>
+				<a href="#"><img src="images/shida5.jpg"/></a>
+				<a href="#"><img src="images/shida6.jpg"/></a>
+				<a href="#"><img src="images/shida7.jpg"/></a> 
+				<a href="#"><img src="images/shida8.jpg"/></a>
+				<a href="#"><img src="images/shida9.jpg"/></a>
+				<div class="bottom">
+					<span id="prev"><</span>
+					
+					<span id="next">></span>
+				</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		
+		var wrap=document.getElementsByClassName('wrap')[0];
+		var imgs=wrap.getElementsByTagName('a');
+		var prev=document.getElementById('prev');
+		var next=document.getElementById('next');
+		var i=0;
+		function img(){
+			imgs[i%9].style.display='none';
+			i++;
+			imgs[i%9].style.display='block';
+		}
+		var timer=setInterval(img,2000);
+		wrap.onmouseover=function(){
+			clearInterval(timer)
+		}
+		wrap.onmouseout=function(){
+			timer=setInterval(img,2000);
+		}
+		prev.onclick=function()
+		{
+			animate(wrap,{left:1000},function(){
+			})
+		}
+		next.onclick=function()
+		{
+			img();
+		}
+		
+	</script>
+</html>
