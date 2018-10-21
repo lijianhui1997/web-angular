@@ -1,0 +1,28 @@
+ul li{
+    float: left;
+    margin:30px;
+    height: 150px;
+}
+img{
+    width: 150px;
+    height: 100px;
+}
+ul{
+    width:1000px;
+    float: left;
+}
+ul li{
+    list-style: none;
+}
+span{
+    padding:10px;
+    font-size:10px;
+}
+button{
+    background-color:orange;
+    margin-left:30px;
+   font-size:10px;
+}
+a{
+    text-decoration: none;
+}

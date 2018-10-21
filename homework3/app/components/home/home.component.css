@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    padding:0;
+}
+#left{
+    width: 200px;
+    float: left;
+}
+img{
+    float:left;
+    margin:10px;
+}
+a{
+    width:200px;
+    margin-bottom: 10px;
+    margin-left:40px;
+    float: left;
+}
+#left a:after{
+    content:"›";
+    font-size:20px;
+    margin-left:50px;
+}
+#right{
+    float:left;
+    height:600px;
+    margin-top:20px;
+}
+#top{
+    height: 100px;
+    padding:10px;
+}
+#bottom{
+    height: 400px;
+
+}
+
+a{
+    text-decoration: none;
+}
+span{
+    margin-left:100px;
+}

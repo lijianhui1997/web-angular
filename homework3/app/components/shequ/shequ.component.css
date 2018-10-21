@@ -1,0 +1,24 @@
+*{
+    margin:0 auto;
+}
+.container{
+    margin-left:60px;
+    align-content:center;
+}
+ul li{
+    width: 1000px;
+    height: 150px;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width:180px;
+    float: left;
+    margin:5px;
+}
+
+span{
+    font-size:10px;
+}

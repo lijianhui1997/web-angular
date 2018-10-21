@@ -1,0 +1,28 @@
+
+.container{
+    width:1000px;
+    margin:20px;
+}
+.container li{
+    float: left;
+    list-style: none;
+    width: 150px;
+    margin:30px;
+    height: 150px;
+}
+ul {
+    width:1000px;
+    height: 100px;
+}
+img{
+    width: 150px;
+    height: 100px;
+}
+span{
+    padding:5px;
+    font-size:10px;
+}
+
+a{
+    text-decoration: none;
+}

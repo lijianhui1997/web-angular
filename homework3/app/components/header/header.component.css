@@ -1,0 +1,30 @@
+nav{
+    height: 50px;
+    background-color: #ccc;
+}
+.nav{
+    width: 1000px;
+    margin: 0 auto;
+    line-height: 50px;
+}
+img{
+    float: left;
+    
+}
+.nav li{
+    float: left;
+    margin: 0 30px;
+    cursor: pointer;
+    list-style: none;
+}
+.nav li a{
+    text-decoration-line: none;
+}
+img{
+    margin-right: 130px;
+}
+#search{
+    line-height: 50px;
+    margin-top: 15px;
+    float: left;
+}

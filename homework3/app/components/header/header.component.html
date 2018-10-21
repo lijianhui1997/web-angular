@@ -1,0 +1,13 @@
+<nav>
+  
+  <ul class="nav">
+    <img src="http://www.edu2act.cn/static/img/logo.png" alt=""/>
+    <li><a [routerLink]="['/home']">首页</a></li>
+    <li><a [routerLink]="['/tongbu',1]">同步课</a></li>
+    <li><a [routerLink]="['/course']">课程</a></li>
+    <li><a [routerLink]="['/shequ']" [queryParams]="{id:800,name:'ll'}">社区</a></li>
+  </ul>
+  <input id="search" type="search" placeholder="搜索课程、问题"/>
+  <!-- <img src="http://www.edu2act.cn/static/img/m.png" alt="" class="xiaotu"/> -->
+</nav>
+
