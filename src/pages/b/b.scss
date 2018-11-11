@@ -1,0 +1,115 @@
+page-b {
+    ion-header{
+        height: 176px;
+        background: url(../assets/imgs/wode_bg.png);
+        background-size: cover;
+        img{
+            width: 90px;
+            height: 90px;
+            position: relative;
+            left:40%;
+            top:40px;
+            border-radius: 100%;
+        }
+        p{
+            position: relative;
+            left:43%;
+            top:30px;
+        }
+    }
+    ion-content{
+        margin-top:0;
+        .one{
+            background:url(../assets/imgs/bg_1.png);
+            background: cover;
+            height: 46px;
+            span{
+                    line-height: 46px;
+                    
+            }
+            .dingdan1{
+                
+                margin-left:5px;
+            }
+            .dingdan2{
+                font-weight: 100;
+                float: right;
+            }
+        }
+        .two{
+            height: 86px;
+            span{
+                line-height: 86px;
+                width:33%;
+                text-align: center;   
+            }
+            
+            
+            .fabu{
+                height: 86px;
+                width: 33%;
+                background-color:#ffdb2c;
+                text-align: center;
+                float: left;
+                border: 1px solid #eeeeee;
+                ion-icon{
+                    position: relative;
+                    top:30px;
+                }
+                
+            }
+            .shoucang{
+                height: 86px;
+                width: 33%;
+                text-align: center;
+                float: left;
+                border: 1px solid #eeeeee;
+                ion-icon{
+                    position: relative;
+                    top:30px;
+                }
+            }
+            .guanzhu{
+                height: 86px;
+                width: 34%;
+                text-align: center;
+                float: left;
+                border: 1px solid #eeeeee;
+                ion-icon{
+                    position: relative;
+                    top:30px;
+                }
+            }
+            ion-icon{
+                margin:0;
+            }
+        }
+
+        .three{
+            .text{
+                height: 85px;
+                width: 50%;
+                float: left;
+                border: 5px solid #eeeeee;
+                text-align: center;
+
+                ion-icon{
+                    position: relative;
+                    top:25px;
+                    
+                }
+            }
+            
+            span{
+                line-height: 85px;
+                text-align: center;
+            }
+           
+        }
+    }
+    // .box{
+    //     ion-item{
+    //         background: transparent;
+    //     }
+    // }
+}
